@@ -15,7 +15,7 @@ body{color:#333;font-family:"segoe ui",Arial,sans-serif}#page{width:90%;margin:4
 	<div id="page">
 		<h1>解析爱奇艺视频地址</h1>
 		<form action="index.php" method="get">
-			<input id="url" class="input" name="url" type="text" placeholder="请在此输入视频地址"<?php echo isset($_GET['url']) && $_GET['url'] != '' ? ' value="' . $_GET['url'] . '"' : ''?>>
+			<input id="url" class="input" name="url" type="text" placeholder="http://www.iqiyi.com/v_19rrm0khs8.html"<?php echo isset($_GET['url']) && $_GET['url'] != '' ? ' value="' . $_GET['url'] . '"' : ''?>>
 			<input id="proxy" class="input" name="proxy" type="text" placeholder="输入国内代理如: 36.37.36.38:80"<?php echo isset($_GET['proxy']) && $_GET['proxy'] != '' ? ' value="' . $_GET['proxy'] . '"' : ''?> style="display:<?php echo isset($_GET['proxy']) && $_GET['proxy'] != '' ? '' : 'none'?>">
 			<label class="type"><input type="radio" value="fluent" name="type" <?php echo isset($_GET['type']) && $_GET['type'] == "fluent" ? ' checked="checked"' : ''?>/>极速</label>
 			<label class="type"><input type="radio" value="normal" name="type" <?php echo isset($_GET['type']) && $_GET['type'] == 'normal' ? ' checked="checked"' : ''?>/>流畅</label>
